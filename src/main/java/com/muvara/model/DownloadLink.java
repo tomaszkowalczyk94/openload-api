@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import retrofit2.http.Url;
 
 @Getter
 @Setter
@@ -26,6 +25,6 @@ public class DownloadLink {
 
     @SerializedName("url")
     @Expose
-    private Url url;
+    private String url;
 
 }
