@@ -14,6 +14,9 @@ public interface Api {
     @GET("file/dlticket")
     Call<Response<DownloadTicket>> downloadTicket(@Query("file") String file);
 
+    @GET("file/dl")
+    Call<Response<DownloadLink>> downloadLink(@Query("file") String file, @Query("ticket") String ticket);
+
     @GET("file/info")
     Call<Response<FileInfo>> fileInfo(@Query("file") String id);
 
