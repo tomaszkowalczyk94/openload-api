@@ -26,7 +26,7 @@ public class OpenLoadApi {
 
     public static final String UPLOAD_TEST_FILE = "Test.txt";
 
-    public static Api client(final String login, final String key) {
+    public static Api client(final String login, final String key, String baseUrl) {
         Gson gson = new GsonBuilder()
                 // TODO REFACTOR
                 .registerTypeAdapter(FileInfo.class,
@@ -65,7 +65,7 @@ public class OpenLoadApi {
         }).build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Api.BASE_URL)
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(client)
                 .build();

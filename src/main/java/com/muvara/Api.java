@@ -8,8 +8,6 @@ import retrofit2.http.*;
 
 public interface Api {
 
-    String BASE_URL = "https://api.openload.co/1/";
-
     @GET("account/info")
     Call<Response<AccountInfo>> accountInfo();
 

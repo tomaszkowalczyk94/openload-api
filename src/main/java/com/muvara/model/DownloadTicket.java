@@ -21,15 +21,15 @@ public class DownloadTicket {
 
     @SerializedName("captcha_w")
     @Expose
-    private Integer captchaW;
+    private String captchaW;
 
     @SerializedName("captcha_h")
     @Expose
-    private Integer captchaH;
+    private String captchaH;
 
     @SerializedName("wait_time")
     @Expose
-    private Integer waitTime;
+    private String waitTime;
 
     @SerializedName("valid_until")
     @Expose
